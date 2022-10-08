@@ -15,16 +15,16 @@ namespace efcoreDesign.DAL.Configuration
         {
             builder.HasKey(x => x.BrandId);
             builder.Property(t0 => t0.BrandName).HasMaxLength(100);
-            
+
             builder.HasData(
-                
-                new Brand() { BrandId=1, BrandName="BMW"},
+
+                new Brand() { BrandId = 1, BrandName = "BMW" },
                 new Brand() { BrandId = 2, BrandName = "Mercedes" },
                 new Brand() { BrandId = 3, BrandName = "Hyundai" },
                 new Brand() { BrandId = 4, BrandName = "Volkswagen" },
                 new Brand() { BrandId = 5, BrandName = "Ford" },
                 new Brand() { BrandId = 6, BrandName = "Volvo" }
-                )
+                );
         }
     }
 }

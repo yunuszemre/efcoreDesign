@@ -11,10 +11,11 @@ namespace efcoreDesign.DAL.Entity
         public Brand()
         {
             this.Vehicles = new List<Vehicle>();
+            this.Models = new List<VehicleModel>();
         }
         public int BrandId { get; set; }
         public string? BrandName { get; set; }
-
+        public List<VehicleModel> Models { get; set; }
         public List<Vehicle> Vehicles { get; set; }
     }
 }

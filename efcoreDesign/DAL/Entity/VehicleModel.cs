@@ -15,5 +15,7 @@ namespace efcoreDesign.DAL.Entity
         public int VehicleId { get; set; }
 
         public Vehicle Vehicle { get; set; }
+        public int BrandId { get; set; }
+        public virtual Brand Brand { get; set; }
     }
 }
